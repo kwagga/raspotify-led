@@ -3,7 +3,7 @@
 gpiopin=18
 
 echo "$gpiopin" > /sys/class/gpio/export
-echo "out" > /sys/class/gpio/gpio18/direction
+echo "out" > /sys/class/gpio/gpio$gpiopin/direction
 
 while :
 do
